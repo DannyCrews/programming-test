@@ -2,8 +2,8 @@ Hello, world! programs written in Ruby, Python and C.
 
 To execute, enter the following on the command line terminal:
 
-Ruby:         ./hello.rb
+For hello.rb:         ./hello.rb
 
-Python:       ./hello.py
+For hello.py:         ./hello.py
 
-C:            ./hello
+For hello.c:          ./hello

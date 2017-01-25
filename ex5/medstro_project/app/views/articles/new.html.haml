@@ -1,8 +1,9 @@
-%h3.text-center Adding New Article
+.wrapper_with_padding
+  %h1 Add a New Article
 
-= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f|
-  = f.label :title
-  = f.text_field :title, placeholder: "Title of article", autofocus: true
-  = f.label :body
-  = f.text_area :body, rows: 10, placeholder: 'Body of article'
-  = f.submit
+  = form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f|
+    = f.label :title
+    = f.text_field :title, placeholder: "Title of article", autofocus: true
+    = f.label :body
+    = f.text_area :body, rows: 10, placeholder: 'Body of article'
+    = f.button :submit, class: "button"

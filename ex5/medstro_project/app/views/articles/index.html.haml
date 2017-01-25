@@ -1,6 +1,12 @@
-= link_to "New Article", new_article_path
+.wrapper_with_padding
+  %h1 Articles
+  %button= link_to "New Article", new_article_path
+  #articles.clearfix
+    - unless @articles.blank?
+      - @articles.each do |article|
+        .article
+          %p.title= article.title
+          %p.body= article.body
 
-- @articles.each do |article|
-  %p= article.title
 
 

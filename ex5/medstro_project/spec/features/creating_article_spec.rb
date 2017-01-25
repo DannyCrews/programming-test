@@ -1,16 +1,18 @@
-require "rails_helper"
+ require "rails_helper"
 
-RSpec.feature "Creating Articles" do
-  scenario "A user creates a new article" do
-    visit "/"
+ RSpec.feature "Creating Articles" do
+   scenario "A user creates a new article" do
+     visit "/"
 
-    fill_in "Title", with: "Creating a blog"
-    fill_in "Body", with: "Lorem Ipsum"
+     click_link "New Article"
 
-    click_button "Create Article"
+     fill_in "Title", with: "Creating a blog"
+     fill_in "Body", with: "Lorem Ipsum"
 
-    expect(page).to have_content("Article has been created")
-    expect(page.current_path).to eq(articles_path)
-  end
+     click_button "Create Article"
 
-end
+     expect(page).to have_content("Article has been created")
+     expect(page.current_path).to eq(articles_path)
+   end
+
+ end

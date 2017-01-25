@@ -1,2 +1,8 @@
-%h1 Articles#new
-%p Find me in app/views/articles/new.html.haml
+%h3.text-center Adding New Article
+
+= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f|
+  = f.label :title
+  = f.text_field :title, placeholder: "Title of article", autofocus: true
+  = f.label :body
+  = f.text_area :body, rows: 10, placeholder: 'Body of article'
+  = f.submit

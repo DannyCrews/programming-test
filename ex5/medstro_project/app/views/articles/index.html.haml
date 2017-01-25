@@ -1,9 +1,6 @@
-%h3.text-center Adding New Article
-.row
-  .col-md-12
-    = form_for(@article, :html => {role: "form"}) do |f|
-      = f.label :title
-      = f.text_field :title, placeholder: "Title of article", autofocus: true
-      = f.label :body
-      = f.text_area :body, rows: 10, placeholder: 'Body of article'
-      = f.submit
+= link_to "New Article", new_article_path
+
+- @articles.each do |article|
+  %p= article.title
+
+

@@ -1,0 +1,43 @@
+1.  What are some interesting differences between Java, Python, and Ruby?
+
+
+
+
+2.  What is garbage collection?
+Garbage collection is a characteristic of an operating system whereby the OS automatically identifies data structures and processes that are no longer being used by the executing software and makes the memory they were consuming available for other purposes.
+
+3.  What is TCP/IP?
+TCP/IP stands for Transmission Control Protocol/Internet Protocol and is the transport layer in the Open Sytems Interconnection(OSI) model. The TCP/IP transport layer lies beneath the Application Layer and is responsible for the reliable transmission of data. TCP is responsible for error detection, flow control and overall reliability, while IP is responsible for network routing.
+
+4.  What is HTTP?
+HTTP stands for HyperText Transfer Protocol is an OSI Application Layer protocol and is a stateless request-response protocol used to allow a client User Agent, such as a browser, to communicate with a server. HTTP is a plain text protocol that segments control and data into Header and Body elements of the HTTP message.
+
+5.  What are GET and POST requests each used for?
+GET and POST are HTTP methods(verbs) that indicate a desired action associated with an HTTP message. The GET method is used to request a represention of a resource and is used only to retrieve data(it is considered safe). The POST method is a request that the server update the representation of a specified resource.
+
+
+6.  What are threads?
+Threads are sets of values for processor registers and are the units affected by an executing program flow control. Threads consist of register values and associated instruction and stack pointers that allow a processor to perform task switching within a computer program (process). The thread is a sequence of instructions that can be executed independently.
+
+
+7.  What are processes?
+A process is an instance of a program running on a computer. It is a running program with an associated set of data. A process can spawn a child process and also may exchange information with other processes. A process may consist of one or more execution threads.
+
+
+8.  What is SQL?
+SQL stands for Structured Query Language and is a programming language used to interact with a relational database. SQL is characterized by a terse and human readable syntax that allows users to perform Create, Read, Update and Delete(CRUD) operations on the database.
+
+
+9.  What is a B-Tree?
+A B-tree is a tree data structure used in databases and file systems. B-trees are self-balancing and differ from binary trees in that they may have a variable number of child nodes. B-trees are used in order to minimize the number of access operations when searching large data structures.
+
+
+10. What is the difference between Heroku and Digital Ocean?
+Heroku and Digital Ocean are both cloud computing platform providers. Heroku provides Platform as a Service capability characterized by providing a well defined and opinionated platform upon which applications may be hosted. This 'opinionated' approach provides ease of deployment and integrated Dev-Ops. Digital Ocean is better characterized as Infrastructure as a Service (IaaS) where raw server instances are provided that may be highly customized and require more detailed design effort on the developers part. Digital Ocean is more flexible at the cost of higher Dev-Ops support requirements.
+
+11. What is the Model-View-Controller pattern?
+The Model-View-Controller pattern is an application design pattern that enforces the Separation of Concerns paradigm by segmenting application logic into that focused on the view(user inteface), the controller(view logic and data routing) and the model(business logic and database I/O).
+
+
+12. What is the single-responsibility principle?
+The Single Responsibility Principal(SRP) is an Object Oriented Programming principle that brings clarity and maintainablity to a OOP software program by dictating that a Class, Module or Method should be responsible for performing a single, focused task. By adhering to the SRP code becomes less fragile, more loosely coupled, and easier to maintain, debug and test.

@@ -1,22 +1,16 @@
 class Animal
-  attr_reader :name, :species, :sound
+  attr_reader :sound
 
-  def initialize(name="Rover", species="dog", sound="Growl!!")
-    @name = name
-    @species = species
+  def initialize(sound='silence')
     @sound = sound
   end
 
   def speak
-    puts @sound
+    puts sound
   end
 
-  def to_s
-    "#{@name}"
+  def eat(food)
+    puts "Eats #{food.food_name} - nom, nom, nom"
   end
-end
 
-if __FILE__ == $0
-simon = Animal.new("Simon", "dog", "Ruff!")
-puts simon.species
 end

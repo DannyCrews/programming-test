@@ -3,40 +3,24 @@
 # require_relative 'food'
 
 class Earth
+  attr_accessor :animals, :food
   def initialize
-    @animals = []
-    @humans = []
+    @animals, @food = [], []
+  end
+
+  def add_animal(*animal_name)
+    animals << animal_name
+  end
+
+  def add_food(*food_item)
+    food << food_item
+  end
+
+  def destruct
+    @animals =[]
     @food = []
+    puts "Kabloom!!!"
   end
 
-  def add_animal(animal)
-    @animals << animal
-  end
-
-  def add_food(food)
-    @food << food
-  end
-
-  def add_human(human)
-    @humans << human
-  end
-
-  def human_population
-    @humans.each do |human|
-      puts human
-    end
-  end
-
-  def animal_population
-    @animals.each do |animal|
-      puts animal
-    end
-  end
-
-  def food_supply
-    @food.each do |food|
-      puts food
-    end
-  end
 end
 

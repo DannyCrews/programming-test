@@ -1,32 +1,46 @@
-require_relative 'earth'
-require_relative 'human'
-require_relative 'food'
+#!/usr/bin/ruby
 
+require_relative 'earth'
+require_relative 'food'
+require_relative 'animals'
+
+# Lets make some food
+lasagna = Food.new("lasagna")
+steak = Food.new("steak")
+kibble = Food.new("kibble")
+mouse = Food.new("mouse")
+
+# Let's make some animals
+jon = Animals::Human.new
+garfield = Animals::Cat.new
+odie = Animals::Dog.new
+kaa = Animals::Snake.new
+
+# Let's play God
 earth = Earth.new
 
-friskie = Animal.new("friskie", "cat", "Mew")
-paws = Animal.new("paws", "cat", "Mew")
-rover = Animal.new("rover", "dog", "Ruff!")
-dan = Human.new("Dan", "Hello!")
+# Populate the earth
+earth.add_animal(jon, garfield, odie, kaa)
+earth.add_food(lasagna, steak, kibble, mouse)
+puts earth.animals
+puts earth.food
 
-meat = Food.new("meat")
-water = Food.new("water")
+# Noisy animals
+garfield.speak
+odie.speak
+kaa.speak
 
-earth.add_animal(friskie)
-earth.add_animal(paws)
-earth.add_animal(rover)
-earth.add_human(dan)
-earth.add_food(meat)
-earth.add_food(water)
+# Pet them!
+jon.pet(garfield)
+jon.pet(odie)
+jon.pet(kaa)
 
-earth.human_population
-earth.animal_population
-earth.food_supply
+# Jon destroys the earth
+jon.destroy_earth(earth)
 
-puts paws.species
-paws.speak
+# Nothing left
+puts earth.animals.inspect
+puts earth.food.inspect
 
-dan.speak
-puts dan.species
 
 

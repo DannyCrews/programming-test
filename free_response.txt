@@ -1,6 +1,5 @@
 1.  What are some interesting differences between Java, Python, and Ruby?
-
-
+All three are popular, server-side programming languages that facilitate Object Oriented Programming. One major interesting difference between Java and Python/Ruby is that Java is very strongly typed where Python/Ruby are dynamically typed. Another is that Python and Ruby are interpreted languages that are processed at runtime while Java is compiled prior to runtime into an executable binary. This makes Java highly portable because the compiled binary can execute on any machine, regardless of OS, that can host the underlying Java Virtual Machine. Another interesting difference is one of philosophy between Ruby and Python. While both are highly expressive and easy to read by humans, Python embraces a philosophy of 'doing things one way' while Ruby allows programmers to accomplish a given task in multiple ways. This makes Ruby somewhat more difficult to master in that a programmer must learn multiple means of accomplishing a task and, additionally, which means are idiomatic within the development community.
 
 
 2.  What is garbage collection?
@@ -17,7 +16,7 @@ GET and POST are HTTP methods(verbs) that indicate a desired action associated w
 
 
 6.  What are threads?
-Threads are sets of values for processor registers and are the units affected by an executing program flow control. Threads consist of register values and associated instruction and stack pointers that allow a processor to perform task switching within a computer program (process). The thread is a sequence of instructions that can be executed independently.
+Threads are sets of values for processor registers and are the units affected by an executing prograsm flow control. Threads consist of register values and associated instruction and stack pointers that allow a processor to perform task switching within a computer program (process). The thread is a sequence of instructions that can be executed independently.
 
 
 7.  What are processes?
@@ -40,4 +39,4 @@ The Model-View-Controller pattern is an application design pattern that enforces
 
 
 12. What is the single-responsibility principle?
-The Single Responsibility Principal(SRP) is an Object Oriented Programming principle that brings clarity and maintainablity to a OOP software program by dictating that a Class, Module or Method should be responsible for performing a single, focused task. By adhering to the SRP code becomes less fragile, more loosely coupled, and easier to maintain, debug and test.
+The Single Responsibility Principal(SRP) is an Object Oriented Programming principle that brings clarity and maintainablity to a OOP software program by dictating that a Class, Module or Method should be responsible for performing a single, focused task. By adhering to the SRP, code becomes less fragile, more loosely coupled, and easier to maintain, debug and test.

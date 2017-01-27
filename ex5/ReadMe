@@ -1,3 +1,14 @@
 Uses Ruby 2.3.1 and Rails 4.2.2
 
-Light exercise view is at /light_display
+"/"" is articles listing
+"/articles/new" is new article form
+"/light_display" is clickable lights page
+
+Everything is available from /
+
+To run:
+bundle install
+rake db:migrate
+rake db:seed  --- to load light colors
+
+

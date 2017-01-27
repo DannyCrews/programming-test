@@ -4,7 +4,7 @@ $(document).on "turbolinks:load", ->
     light_id = $(this).data("light-number")
     selectedLight = $(this)
     $.ajax
-      url: "/lights"
+      url: "/api/lights"
       type: "GET"
       dataType: "json"
       success: (data) ->

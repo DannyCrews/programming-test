@@ -1,13 +1,14 @@
 $(document).on "turbolinks:load", ->
   $('.light').click ->
-    console.log("button clicked")
+    $('.light').css({"background":""})
     light_id = $(this).data("light-number")
     selectedLight = $(this)
     $.ajax
-      url: "/lights/" + light_id
+      url: "/lights"
       type: "GET"
       dataType: "json"
       success: (data) ->
-        selectedLight.css(data)
+        console.log(data)
+        selectedLight.css(data[light_id])
       error: (error) ->
-        selectedLight.css({"background":"red"})
+        console.log(error)

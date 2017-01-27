@@ -4,11 +4,11 @@ $(document).on "turbolinks:load", ->
     light_id = $(this).data("light-number")
     selectedLight = $(this)
     $.ajax
-      url: "/api/lights"
+      url: "/api/lights/"
       type: "GET"
       dataType: "json"
       success: (data) ->
-        console.log(data)
-        selectedLight.css(data[light_id])
+        attribute = data.lights[light_id]
+        selectedLight.css(attribute.property, attribute.value)
       error: (error) ->
         console.log(error)

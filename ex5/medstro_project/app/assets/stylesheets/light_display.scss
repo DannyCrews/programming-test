@@ -1,6 +1,51 @@
-.light {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  border: 1px solid black;
+$skyblue: #529ECC;
+
+@mixin bold_font {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 90vh;
+  max-height: 90vh;
+  margin: 10vh auto;
+  padding-left: 5%;
+  position: relative;
+  background-color: $skyblue;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+
+  .row {
+    width: 100%;
+    height:30%;
+
+    .light {
+      display: inline-block;
+      margin: 2%;
+      width: 14%;
+      padding-bottom: 14%;
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+}
+
